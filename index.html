@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Paws Pet Adoption Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <img src="images/logo.svg" alt="Happy Paws logo" class="logo">
+      <span>Happy Paws</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pets">Pets</a>
+      <a href="#shop">Shop</a>
+      <a href="#apply">Apply</a>
+    </nav>
+    <button type="button" id="theme-btn" class="btn btn-light">Toggle Light/Dark Mode</button>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div>
+        <h1>Every pet deserves a loving home.</h1>
+        <p id="status"></p>
+        <p>Meet dogs, cats and rabbits who are vaccinated, cared for and ready to join your family.</p>
+        <a href="#pets" class="btn">Meet the Pets</a>
+      </div>
+      <img src="images/hero-golden.jpg" alt="A happy golden retriever looking at the camera">
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about">
+        <article>
+          <p>Happy Paws is a no-kill shelter that has found homes for over <strong>2,000 animals</strong> since opening. All our animals are <em>vaccinated</em> before they are ever listed for adoption.<span id="more-text"> Every morning starts with walks, playtime and fresh meals, and our volunteers spend time with each animal so they stay friendly and confident. Our vet visits twice a week for check-ups, and every pet is microchipped before going home.</span></p>
+          <button type="button" id="read-more-btn" class="btn btn-light">Read More</button>
+        </article>
+        <img src="images/shelter_image.jpg" alt="Dogs and cats at the shelter waiting for adoption">
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Life at the Shelter</h2>
+      <p class="hint">Scroll sideways to see more of our residents.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/gallery-1-playtime.png" alt="A puppy playing in the yard">
+          <figcaption>Playtime in the yard</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-2-kitten-nap.png" alt="A kitten resting">
+          <figcaption>Nap time for the kittens</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-3-waiting.png" alt="A dog waiting for a family">
+          <figcaption>Waiting for a family</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-4-rabbit-snack.png" alt="A rabbit eating vegetables">
+          <figcaption>Snack break</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-5-window.png" alt="Cats looking out of a window">
+          <figcaption>Window watching</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-6-walk.png" alt="A dog on a walk">
+          <figcaption>Morning walks</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-7-best-friends.png" alt="Two kittens together">
+          <figcaption>Best friends</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery-8-beagle.png" alt="A beagle sitting on grass">
+          <figcaption>Ready to go home</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="pets">
+      <h2>Adoptable Pets</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/pet-buddy.jpg" alt="Buddy the Labrador mix">
+          <h3>Buddy</h3>
+          <p>A 2-year-old Labrador mix. Friendly, energetic, and great with kids.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/pet-whiskers.jpg" alt="Whiskers the British Shorthair cat">
+          <h3>Whiskers</h3>
+          <p>A 1-year-old British Shorthair cat. Calm, affectionate, and litter-trained.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/pet-coco.jpg" alt="Coco the rabbit">
+          <h3>Coco</h3>
+          <p>A 3-year-old rabbit. Gentle and quiet, perfect for a small apartment.</p>
+        </article>
+      </div>
+
+      <h3>Meet More of Our Animals</h3>
+      <ul>
+        <li>Max — Beagle, 4 years old</li>
+        <li>Luna — Domestic Shorthair, 6 months old</li>
+        <li>Rocky — Mixed Breed, 5 years old</li>
+      </ul>
+
+      <h3>Adoption Process</h3>
+      <ol type="A">
+        <li>Browse our adoptable pets.</li>
+        <li>Fill in the <a href="#apply">application form</a>.</li>
+        <li>Attend a short meet-and-greet at the shelter.</li>
+        <li>Pay the <a href="#fees">adoption fee</a> and take your pet home.</li>
+      </ol>
+    </section>
+
+    <section id="fees">
+      <h2>Adoption Fees</h2>
+      <table>
+        <caption>Adoption Fee Schedule</caption>
+        <thead>
+          <tr>
+            <th>Pet Type</th>
+            <th>Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row">
+            <td>Dog</td>
+            <td>25k PKR</td>
+          </tr>
+          <tr class="row">
+            <td>Cat</td>
+            <td>50k PKR</td>
+          </tr>
+          <tr class="row">
+            <td>Rabbit</td>
+            <td>33k PKR</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="shop">
+      <h2>Pet Supplies Menu</h2>
+      <div class="filters">
+        <button type="button" class="btn filter-btn" value="all">All</button>
+        <button type="button" class="btn filter-btn" value="dogs">Dogs</button>
+        <button type="button" class="btn filter-btn" value="cats">Cats</button>
+        <button type="button" class="btn filter-btn" value="rabbits">Rabbits</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Add</th>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row dogs">
+            <td><input type="checkbox" class="item" value="4500"></td>
+            <td>Dog Food (5 kg)</td>
+            <td>Rs 4500</td>
+          </tr>
+          <tr class="row dogs">
+            <td><input type="checkbox" class="item" value="1800"></td>
+            <td>Leash and Collar Set</td>
+            <td>Rs 1800</td>
+          </tr>
+          <tr class="row cats">
+            <td><input type="checkbox" class="item" value="3800"></td>
+            <td>Cat Food (3 kg)</td>
+            <td>Rs 3800</td>
+          </tr>
+          <tr class="row cats">
+            <td><input type="checkbox" class="item" value="2500"></td>
+            <td>Scratching Post</td>
+            <td>Rs 2500</td>
+          </tr>
+          <tr class="row rabbits">
+            <td><input type="checkbox" class="item" value="900"></td>
+            <td>Fresh Hay Bundle</td>
+            <td>Rs 900</td>
+          </tr>
+          <tr class="row rabbits">
+            <td><input type="checkbox" class="item" value="7500"></td>
+            <td>Rabbit Hutch</td>
+            <td>Rs 7500</td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="total">Total: Rs 0</p>
+    </section>
+
+    <section id="apply">
+      <h2>Adoption Application</h2>
+      <form id="adopt-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="03XX-XXXXXXX">
+
+        <label for="birth-year">Birth Year</label>
+        <input type="text" id="birth-year" placeholder="e.g. 2004">
+        <p id="age-message"></p>
+
+        <label for="visit-date">Preferred Meet-and-Greet Date</label>
+        <input type="date" id="visit-date">
+
+        <fieldset>
+          <legend>Which pet are you interested in?</legend>
+          <label class="option"><input type="radio" name="pet-type" id="dog"> Dog</label>
+          <label class="option"><input type="radio" name="pet-type" id="cat"> Cat</label>
+          <label class="option"><input type="radio" name="pet-type" id="rabbit"> Rabbit</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Vaccination and Care Confirmation</legend>
+          <label class="option"><input type="checkbox" id="vaccinated"> I understand this pet comes vaccinated</label>
+          <label class="option"><input type="checkbox" id="home-visit"> I agree to a home visit before adoption</label>
+        </fieldset>
+
+        <label for="special-notes">Special Requests</label>
+        <textarea id="special-notes" maxlength="100"></textarea>
+        <p id="char-count">100 characters remaining</p>
+
+        <button type="submit" class="btn">Submit Application</button>
+        <button type="reset" class="btn btn-light">Clear Form</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
+
+    <aside class="tip">
+      <h2>Did You Know?</h2>
+      <p>Adopting a pet not only saves a life, it also frees up space and resources so we can rescue another animal in need.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Open daily 8 AM – 8 PM · <a href="mailto:hello@happypaws.pk">hello@happypaws.pk</a></p>
+    <p>© 2026 Happy Paws Pet Adoption Center. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
