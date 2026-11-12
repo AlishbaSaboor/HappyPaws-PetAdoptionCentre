@@ -8,7 +8,7 @@ A website for a pet adoption shelter where visitors can meet adoptable pets, see
 
 ## 🚀 How to Run the Project
 
-You can view the live project directly here: [Insert GitHub Pages Link]
+You can view the live project directly here: [Live Project](https://alishbasaboor.github.io/HappyPaws-PetAdoptionCentre/)
 
 Alternatively, to run it locally:
 1. Clone or download this repository.
